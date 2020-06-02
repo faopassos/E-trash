@@ -20,7 +20,52 @@
       </a>
     </header>      
 
-  </div> 
+  </div>
+
+  <form action="">
+
+    <h1>Cadastro do ponto de coleta</h1>
+
+    <fieldset>
+      <legend>
+        <h2>Dados da entidade</h2>
+      </legend>
+
+      <div class="field">
+        <label for="name">Nome da entidade</label>
+        <input type="text" name="name">
+      </div>
+
+      <div class="field-group">
+        <div class="field">
+          <label for="address">Endereço</label>
+          <input type="text" name="address">
+        </div>
+        <div class="field">
+          <label for="address2">Numero/Complemento</label>
+          <input type="text" name="address2">
+        </div>
+      </div>
+
+      <div class="field-group">
+        <div class="field">
+          <label for="uf">Estado</label>
+          <select name="uf">
+            <option value="">Selecione o estado</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="city">Cidade</label>
+          <select name="city" disabled>
+            <option value="">Selecione a cidade</option>
+          </select>
+        </div>
+      </div>
+    </fieldset>
+
+    <button type="submit">Cadastrar ponto de coleta</button>
+
+  </form>
 
 </body>
 </html>
