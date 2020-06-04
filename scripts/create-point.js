@@ -40,3 +40,27 @@ function getCities(event) {
 document
   .querySelector("select[name=uf]")
   .addEventListener("change", getCities)
+
+// itens de coleta
+
+const itemsToCollect = document.querySelectorAll(".items-grid li");
+
+for (const item of itemsToCollect) {
+  item.addEventListener("click", handleSelectedItem);
+}
+
+let selectedItems = [];
+
+function handleSelectedItem(event) {
+  const itemLi = event.target;
+
+  // add ou remove classe
+  itemLi.classList.toggle("selected");
+
+  const itemId = itemLi.dataset.id;
+
+  const alreadySelected = selectedItems.findIndex(function(item) {
+    const itemFound = item == itemId;
+    return itemFound;
+  })
+}
