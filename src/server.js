@@ -3,6 +3,8 @@
 const express = require('express');
 const nunjucks = require('nunjucks');
 
+const db = require('./database/db');
+
 const server = express();
 
 // config template engine
