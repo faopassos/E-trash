@@ -53,21 +53,12 @@ module.exports = db;
 
   // db.run(query, values, afterInsertData);
 
-  // db.all(`SELECT * FROM places`, function(err, rows) {
-  //   if(err) {
-  //     return console.log(err);
-  //   }
+//  delete
+//   db.run(`DELETE FROM places WHERE id = ?`, [7], function(err) {
+//     if(err) {
+//       return console.log(err);
+//     }
 
-  //   console.log('Seus registtros:');
-  //   console.log(rows);
-  // });
-
-  // delete
-  // db.run(`DELETE FROM places WHERE id = ?`, [1], function(err) {
-  //   if(err) {
-  //     return console.log(err);
-  //   }
-
-  //   console.log('Registro removido com sucesso');
-  // });
+//     console.log('Registro removido com sucesso');
+//   });
 // });
